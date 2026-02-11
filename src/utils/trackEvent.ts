@@ -1,5 +1,11 @@
 import { track } from '@vercel/analytics'
 
+declare global {
+  interface Window {
+    gtag: any
+  }
+}
+
 export const trackPromotionEvent = (event: string, properties: Record<string, string>) => {
   track(event, properties)
 

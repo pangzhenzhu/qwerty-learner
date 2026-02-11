@@ -16,6 +16,8 @@ export default function InputHandler({ updateInput }: { updateInput: (updateObj:
         return <KeyEventHandler updateInput={updateInput} />
       case 'romaji':
         return <KeyEventHandler updateInput={updateInput} />
+      case 'chinese':
+        return <KeyEventHandler updateInput={updateInput} />
       case 'code':
         return <TextAreaHandler updateInput={updateInput} />
       default:

@@ -1,0 +1,187 @@
+[
+    {
+        "name": "nihao",
+        "trans": [
+            "Hello",
+            "Hi"
+        ],
+        "notation": "你好"
+    },
+    {
+        "name": "xiexie",
+        "trans": [
+            "Thank you",
+            "Thanks"
+        ],
+        "notation": "谢谢"
+    },
+    {
+        "name": "zaijian",
+        "trans": [
+            "Goodbye",
+            "Bye"
+        ],
+        "notation": "再见"
+    },
+    {
+        "name": "duibuqi",
+        "trans": [
+            "Sorry",
+            "Apologies"
+        ],
+        "notation": "对不起"
+    },
+    {
+        "name": "meiguanxi",
+        "trans": [
+            "It's okay",
+            "No problem"
+        ],
+        "notation": "没关系"
+    },
+    {
+        "name": "wo",
+        "trans": [
+            "I",
+            "Me"
+        ],
+        "notation": "我"
+    },
+    {
+        "name": "ni",
+        "trans": [
+            "You"
+        ],
+        "notation": "你"
+    },
+    {
+        "name": "ta",
+        "trans": [
+            "He/Him",
+            "She/Her"
+        ],
+        "notation": "他/她"
+    },
+    {
+        "name": "women",
+        "trans": [
+            "We",
+            "Us"
+        ],
+        "notation": "我们"
+    },
+    {
+        "name": "shui",
+        "trans": [
+            "Water"
+        ],
+        "notation": "水"
+    },
+    {
+        "name": "fan",
+        "trans": [
+            "Rice",
+            "Meal"
+        ],
+        "notation": "饭"
+    },
+    {
+        "name": "chi",
+        "trans": [
+            "To eat"
+        ],
+        "notation": "吃"
+    },
+    {
+        "name": "he",
+        "trans": [
+            "To drink"
+        ],
+        "notation": "喝"
+    },
+    {
+        "name": "shuijiao",
+        "trans": [
+            "To sleep"
+        ],
+        "notation": "睡觉"
+    },
+    {
+        "name": "ma",
+        "trans": [
+            "(Question particle)"
+        ],
+        "notation": "吗"
+    },
+    {
+        "name": "shenme",
+        "trans": [
+            "What"
+        ],
+        "notation": "什么"
+    },
+    {
+        "name": "mingzi",
+        "trans": [
+            "Name"
+        ],
+        "notation": "名字"
+    },
+    {
+        "name": "pengyou",
+        "trans": [
+            "Friend"
+        ],
+        "notation": "朋友"
+    },
+    {
+        "name": "jia",
+        "trans": [
+            "Home",
+            "Family"
+        ],
+        "notation": "家"
+    },
+    {
+        "name": "xuexiao",
+        "trans": [
+            "School"
+        ],
+        "notation": "学校"
+    },
+    {
+        "name": "laoshi",
+        "trans": [
+            "Teacher"
+        ],
+        "notation": "老师"
+    },
+    {
+        "name": "xuesheng",
+        "trans": [
+            "Student"
+        ],
+        "notation": "学生"
+    },
+    {
+        "name": "diannao",
+        "trans": [
+            "Computer"
+        ],
+        "notation": "电脑"
+    },
+    {
+        "name": "dianshi",
+        "trans": [
+            "Television"
+        ],
+        "notation": "电视"
+    },
+    {
+        "name": "xihuan",
+        "trans": [
+            "To like"
+        ],
+        "notation": "喜欢"
+    }
+]

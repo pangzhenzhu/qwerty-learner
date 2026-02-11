@@ -17,6 +17,8 @@ export const WordPronunciationIcon = React.forwardRef<
         // 哈萨克语老文字
         return word.trans[2]
       }
+    } else if (lang === 'chinese') {
+      return word.notation || word.name
     } else {
       return word.name
     }

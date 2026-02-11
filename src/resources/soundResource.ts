@@ -100,6 +100,15 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
       },
     ],
   },
+  chinese: {
+    defaultPronIndex: 0,
+    pronunciation: [
+      {
+        name: '普通话',
+        pron: 'zh',
+      },
+    ],
+  },
   ja: {
     defaultPronIndex: 0,
     pronunciation: [

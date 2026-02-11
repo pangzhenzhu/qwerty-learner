@@ -1,0 +1,1852 @@
+[
+  {
+    "name": "ai",
+    "trans": [
+      "to love",
+      "affection",
+      "to be fond of",
+      "to like"
+    ],
+    "notation": "爱",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ba",
+    "trans": [
+      "eight",
+      "8"
+    ],
+    "notation": "八",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "baba",
+    "trans": [
+      "(informal) father",
+      "CL:個|个",
+      "位[wèi]"
+    ],
+    "notation": "爸爸",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "beizi",
+    "trans": [
+      "cup",
+      "glass",
+      "CL:個|个",
+      "支",
+      "枝[zhī]"
+    ],
+    "notation": "杯子",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "beijing",
+    "trans": [
+      "Beijing",
+      "capital of People's Republic of China",
+      "Peking",
+      "PRC government"
+    ],
+    "notation": "北京",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ben",
+    "trans": [
+      "roots or stems of plants",
+      "origin",
+      "source",
+      "this",
+      "the current",
+      "root",
+      "foundation",
+      "basis",
+      "classifier for books",
+      "periodicals",
+      "files etc",
+      "originally"
+    ],
+    "notation": "本",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bukeqi",
+    "trans": [
+      "you're welcome",
+      "impolite",
+      "rude",
+      "blunt",
+      "don't mention it"
+    ],
+    "notation": "不客气",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "bu",
+    "trans": [
+      "(negative prefix)",
+      "not",
+      "no"
+    ],
+    "notation": "不",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cai",
+    "trans": [
+      "dish (type of food)",
+      "vegetables",
+      "vegetable",
+      "cuisine",
+      "CL:盤|盘",
+      "道[dào]"
+    ],
+    "notation": "菜",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "cha",
+    "trans": [
+      "tea",
+      "tea plant",
+      "CL:杯",
+      "壺|壶[hú]"
+    ],
+    "notation": "茶",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "chi",
+    "trans": [
+      "to eat",
+      "to consume",
+      "to eat at (a cafeteria etc)",
+      "to eradicate",
+      "to destroy",
+      "to absorb",
+      "to suffer"
+    ],
+    "notation": "吃",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "chuzuche",
+    "trans": [
+      "taxi",
+      "(Taiwan) rental car"
+    ],
+    "notation": "出租车",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dadianhua",
+    "trans": [
+      "to make a telephone call"
+    ],
+    "notation": "打电话",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "da",
+    "trans": [
+      "big",
+      "huge",
+      "large",
+      "major",
+      "great",
+      "wide",
+      "deep",
+      "oldest",
+      "eldest"
+    ],
+    "notation": "大",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "de",
+    "trans": [
+      "of",
+      "~'s (possessive particle)",
+      "(used after an attribute)",
+      "(used to form a nominal expression)",
+      "(used at the end of a declarative sentence for emphasis)"
+    ],
+    "notation": "的",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dian",
+    "trans": [
+      "point",
+      "dot",
+      "drop",
+      "speck",
+      "o'clock",
+      "point (in space or time)",
+      "to draw a dot",
+      "to check on a list",
+      "to choose",
+      "to order (food in a restaurant)",
+      "to touch briefly",
+      "to hint",
+      "to light",
+      "to ignite",
+      "to pour a liquid drop by drop",
+      "(old) one fifth of a two-hour watch 更[gēng]",
+      "dot stroke in Chinese characters",
+      "classifier for items"
+    ],
+    "notation": "点",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "diannao",
+    "trans": [
+      "computer",
+      "CL:臺|台[tái]"
+    ],
+    "notation": "电脑",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dianshi",
+    "trans": [
+      "television",
+      "TV",
+      "CL:臺|台",
+      "個|个[gè]"
+    ],
+    "notation": "电视",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dianying",
+    "trans": [
+      "movie",
+      "film",
+      "CL:部",
+      "片",
+      "幕",
+      "場|场[chǎng]"
+    ],
+    "notation": "电影",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dongxi",
+    "trans": [
+      "thing",
+      "stuff",
+      "person",
+      "CL:個|个",
+      "件[jiàn]"
+    ],
+    "notation": "东西",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "dou",
+    "trans": [
+      "all",
+      "both",
+      "entirely",
+      "(used for emphasis) even",
+      "already",
+      "(not) at all"
+    ],
+    "notation": "都",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "du",
+    "trans": [
+      "to read",
+      "to study",
+      "reading of word (i.e. pronunciation)",
+      "similar to 拼音[pīn yīn]"
+    ],
+    "notation": "读",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "duibuqi",
+    "trans": [
+      "unworthy",
+      "to let down",
+      "I'm sorry",
+      "excuse me",
+      "pardon me",
+      "if you please",
+      "sorry? (please repeat)"
+    ],
+    "notation": "对不起",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "duo",
+    "trans": [
+      "many",
+      "much",
+      "a lot of",
+      "numerous",
+      "more",
+      "in excess",
+      "how (to what extent)",
+      "multi-",
+      "Taiwan pr.  when it means \"how\""
+    ],
+    "notation": "多",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "duoshao",
+    "trans": [
+      "how much",
+      "how many",
+      "which (number)",
+      "as much as"
+    ],
+    "notation": "多少",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "erzi",
+    "trans": [
+      "son"
+    ],
+    "notation": "儿子",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "er",
+    "trans": [
+      "two",
+      "2",
+      "stupid (Beijing dialect)"
+    ],
+    "notation": "二",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fanguan",
+    "trans": [
+      "restaurant",
+      "CL:家[jiā]"
+    ],
+    "notation": "饭馆",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "feiji",
+    "trans": [
+      "airplane",
+      "CL:架[jià]"
+    ],
+    "notation": "飞机",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "fenzhong",
+    "trans": [
+      "minute"
+    ],
+    "notation": "分钟",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "gaoxing",
+    "trans": [
+      "happy",
+      "glad",
+      "willing (to do sth)",
+      "in a cheerful mood"
+    ],
+    "notation": "高兴",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ge",
+    "trans": [
+      "variant of 個|个[gè]"
+    ],
+    "notation": "个",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "gongzuo",
+    "trans": [
+      "to work",
+      "(of a machine) to operate",
+      "job",
+      "work",
+      "task",
+      "CL:個|个",
+      "份",
+      "項|项[xiàng]"
+    ],
+    "notation": "工作",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "gou",
+    "trans": [
+      "dog",
+      "CL:隻|只",
+      "條|条[tiáo]"
+    ],
+    "notation": "狗",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hanyu",
+    "trans": [
+      "Chinese language",
+      "CL:門|门[mén]"
+    ],
+    "notation": "汉语",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hao",
+    "trans": [
+      "good",
+      "well",
+      "proper",
+      "good to",
+      "easy to",
+      "very",
+      "so",
+      "(suffix indicating completion or readiness)"
+    ],
+    "notation": "好",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "he",
+    "trans": [
+      "to drink",
+      "My goodness!"
+    ],
+    "notation": "喝",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "he",
+    "trans": [
+      "and",
+      "together with",
+      "with",
+      "sum",
+      "union",
+      "peace",
+      "harmony",
+      "Japanese related",
+      "Taiwan pr. [hàn]"
+    ],
+    "notation": "和",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hen",
+    "trans": [
+      "(adverb of degree)",
+      "quite",
+      "very",
+      "awfully"
+    ],
+    "notation": "很",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "houmian",
+    "trans": [
+      "rear",
+      "back",
+      "behind",
+      "later",
+      "afterwards"
+    ],
+    "notation": "后面",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hui",
+    "trans": [
+      "to curve",
+      "to return",
+      "to revolve"
+    ],
+    "notation": "回",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "hui",
+    "trans": [
+      "can",
+      "be possible",
+      "be able to",
+      "will",
+      "be likely to",
+      "be sure to",
+      "to assemble",
+      "to meet",
+      "to gather",
+      "to see",
+      "union",
+      "group",
+      "association",
+      "CL:個|个[gè]",
+      "a moment (Taiwan pr. for this sense is )"
+    ],
+    "notation": "会",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "huochezhan",
+    "trans": [
+      "train station"
+    ],
+    "notation": "火车站",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ji",
+    "trans": [
+      "how much",
+      "how many",
+      "several",
+      "a few"
+    ],
+    "notation": "几",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "jia",
+    "trans": [
+      "home",
+      "family",
+      "classifier for families or businesses",
+      "refers to the philosophical schools of pre-Han China",
+      "noun suffix for specialists in some activity such as musician or revolutionary",
+      "corresponds to English -ist",
+      "-er",
+      "-ary or -ian",
+      "CL:個|个[gè]"
+    ],
+    "notation": "家",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "jiao",
+    "trans": [
+      "to shout",
+      "to call",
+      "to order",
+      "to ask",
+      "to be called",
+      "by (indicates agent in the passive mood)"
+    ],
+    "notation": "叫",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "jintian",
+    "trans": [
+      "today",
+      "at the present",
+      "now"
+    ],
+    "notation": "今天",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "jiu",
+    "trans": [
+      "nine",
+      "9"
+    ],
+    "notation": "九",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "kai",
+    "trans": [
+      "to open",
+      "to start",
+      "to turn on",
+      "to boil",
+      "to write out (a medical prescription)",
+      "to operate (vehicle)",
+      "abbr. for 開爾文|开尔文 degrees Kelvin"
+    ],
+    "notation": "开",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "kan",
+    "trans": [
+      "to see",
+      "to look at",
+      "to read",
+      "to watch",
+      "to consider",
+      "to regard as",
+      "to view as",
+      "to treat as",
+      "to judge",
+      "(after repeated verb) to give it a try",
+      "depending on (how you're judging)",
+      "to visit",
+      "to call on",
+      "to treat (an illness)",
+      "to look after",
+      "Watch out! (for a danger)"
+    ],
+    "notation": "看",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "kanjian",
+    "trans": [
+      "to see",
+      "to catch sight of"
+    ],
+    "notation": "看见",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "kuai",
+    "trans": [
+      "lump (of earth)",
+      "chunk",
+      "piece",
+      "classifier for pieces of cloth",
+      "cake",
+      "soap etc",
+      "colloquial word for yuan (or other unit of currency such as Hong Kong or US dollar etc)",
+      "usually as 塊錢|块钱"
+    ],
+    "notation": "块",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "lai",
+    "trans": [
+      "to come",
+      "to arrive",
+      "to come round",
+      "ever since",
+      "next"
+    ],
+    "notation": "来",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "laoshi",
+    "trans": [
+      "teacher",
+      "CL:個|个",
+      "位[wèi]"
+    ],
+    "notation": "老师",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "le",
+    "trans": [
+      "(modal particle intensifying preceding clause)",
+      "(completed action marker)"
+    ],
+    "notation": "了",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "leng",
+    "trans": [
+      "cold"
+    ],
+    "notation": "冷",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "li",
+    "trans": [
+      "li (Chinese mile)",
+      "500 meters (modern)",
+      "home",
+      "hometown",
+      "village",
+      "neighborhood",
+      "administrative unit"
+    ],
+    "notation": "里",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ling",
+    "trans": [
+      "zero",
+      "nought",
+      "zero sign",
+      "fractional",
+      "fragmentary",
+      "odd (of numbers)",
+      "(placed between two numbers to indicate a smaller quantity followed by a larger one)",
+      "fraction",
+      "(in mathematics) remainder (after division)",
+      "extra",
+      "to wither and fall",
+      "to wither"
+    ],
+    "notation": "零",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "liu",
+    "trans": [
+      "six",
+      "6"
+    ],
+    "notation": "六",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mama",
+    "trans": [
+      "mama",
+      "mommy",
+      "mother",
+      "CL:個|个",
+      "位[wèi]"
+    ],
+    "notation": "妈妈",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ma",
+    "trans": [
+      "(question tag)"
+    ],
+    "notation": "吗",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mai",
+    "trans": [
+      "to buy",
+      "to purchase"
+    ],
+    "notation": "买",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mao",
+    "trans": [
+      "cat",
+      "CL:隻|只[zhī]"
+    ],
+    "notation": "猫",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mei",
+    "trans": [
+      "(negative prefix for verbs)",
+      "have not",
+      "not"
+    ],
+    "notation": "没",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "meiguanxi",
+    "trans": [
+      "it doesn't matter"
+    ],
+    "notation": "没关系",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mifan",
+    "trans": [
+      "(cooked) rice"
+    ],
+    "notation": "米饭",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mingtian",
+    "trans": [
+      "tomorrow"
+    ],
+    "notation": "明天",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "mingzi",
+    "trans": [
+      "name (of a person or thing)",
+      "CL:個|个[gè]"
+    ],
+    "notation": "名字",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "na",
+    "trans": [
+      "how",
+      "which"
+    ],
+    "notation": "哪",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "na",
+    "trans": [
+      "that",
+      "those",
+      "then (in that case)",
+      "commonly pr.  before a classifier",
+      "esp. in Beijing"
+    ],
+    "notation": "那",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ne",
+    "trans": [
+      "particle indicating that a previously asked question is to be applied to the preceding word (\"What about ...?\", \"And ...?\")",
+      "particle for inquiring about location (\"Where is ...?\")",
+      "particle signaling a pause",
+      "to emphasize the preceding words and allow the listener time to take them on board (\"ok?\", \"are you with me?\")",
+      "(at the end of a declarative sentence) particle indicating continuation of a state or action",
+      "particle indicating strong affirmation"
+    ],
+    "notation": "呢",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "neng",
+    "trans": [
+      "to be able to",
+      "to be capable of",
+      "ability",
+      "capability",
+      "able",
+      "capable",
+      "can possibly",
+      "(usually used in the negative) to have the possibility of"
+    ],
+    "notation": "能",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ni",
+    "trans": [
+      "you (informal, as opposed to courteous 您)"
+    ],
+    "notation": "你",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nian",
+    "trans": [
+      "year",
+      "CL:個|个[gè]"
+    ],
+    "notation": "年",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "nver",
+    "trans": [
+      "daughter"
+    ],
+    "notation": "女儿",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pengyou",
+    "trans": [
+      "friend",
+      "CL:個|个",
+      "位[wèi]"
+    ],
+    "notation": "朋友",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "piaoliang",
+    "trans": [
+      "pretty",
+      "beautiful"
+    ],
+    "notation": "漂亮",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "pingguo",
+    "trans": [
+      "apple",
+      "CL:個|个",
+      "顆|颗[kē]"
+    ],
+    "notation": "苹果",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "qi",
+    "trans": [
+      "seven",
+      "7"
+    ],
+    "notation": "七",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "qian",
+    "trans": [
+      "coin",
+      "money",
+      "CL:筆|笔[bǐ]",
+      "unit of weight",
+      "one tenth of a tael 兩|两[liǎng]"
+    ],
+    "notation": "钱",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "qianmian",
+    "trans": [
+      "ahead",
+      "in front",
+      "preceding",
+      "above"
+    ],
+    "notation": "前面",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "qing",
+    "trans": [
+      "to ask",
+      "to invite",
+      "please (do sth)",
+      "to treat (to a meal etc)",
+      "to request"
+    ],
+    "notation": "请",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "qu",
+    "trans": [
+      "to go",
+      "to go to (a place)",
+      "to cause to go or send (sb)",
+      "to remove",
+      "to get rid of",
+      "(when used either before or after a verb) to go in order to do sth",
+      "to be apart from in space or time",
+      "(after a verb of motion indicates movement away from the speaker)",
+      "(used after certain verbs to indicate detachment or separation)",
+      "(of a time or an event etc) just passed or elapsed"
+    ],
+    "notation": "去",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "re",
+    "trans": [
+      "to warm up",
+      "to heat up",
+      "hot (of weather)",
+      "heat",
+      "fervent"
+    ],
+    "notation": "热",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ren",
+    "trans": [
+      "man",
+      "person",
+      "people",
+      "CL:個|个",
+      "位[wèi]"
+    ],
+    "notation": "人",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "renshi",
+    "trans": [
+      "to know",
+      "to recognize",
+      "to be familiar with",
+      "to get acquainted with sb",
+      "knowledge",
+      "understanding",
+      "awareness",
+      "cognition"
+    ],
+    "notation": "认识",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ri",
+    "trans": [
+      "sun",
+      "day",
+      "date",
+      "day of the month",
+      "abbr. for 日本 Japan"
+    ],
+    "notation": "日",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "san",
+    "trans": [
+      "three",
+      "3"
+    ],
+    "notation": "三",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shangdian",
+    "trans": [
+      "store",
+      "shop",
+      "CL:家",
+      "個|个[gè]"
+    ],
+    "notation": "商店",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shang",
+    "trans": [
+      "on top",
+      "upon",
+      "above",
+      "upper",
+      "previous",
+      "first (of multiple parts)",
+      "to climb",
+      "to get onto",
+      "to go up",
+      "to attend (class or university)"
+    ],
+    "notation": "上",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shangwu",
+    "trans": [
+      "morning",
+      "CL:個|个[gè]"
+    ],
+    "notation": "上午",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shao",
+    "trans": [
+      "few",
+      "little",
+      "lack"
+    ],
+    "notation": "少",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shei",
+    "trans": [
+      "who",
+      "also pr. [shuí]"
+    ],
+    "notation": "谁",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shenme",
+    "trans": [
+      "what?",
+      "who?",
+      "something",
+      "anything"
+    ],
+    "notation": "什么",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shi",
+    "trans": [
+      "ten",
+      "10"
+    ],
+    "notation": "十",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shihou",
+    "trans": [
+      "time",
+      "length of time",
+      "moment",
+      "period"
+    ],
+    "notation": "时候",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shi",
+    "trans": [
+      "is",
+      "are",
+      "am",
+      "yes",
+      "to be"
+    ],
+    "notation": "是",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shu",
+    "trans": [
+      "book",
+      "letter",
+      "CL:本",
+      "冊|册",
+      "部[bù]",
+      "see also 書經|书经 Book of History"
+    ],
+    "notation": "书",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shui",
+    "trans": [
+      "water",
+      "river",
+      "liquid",
+      "beverage",
+      "additional charges or income",
+      "(of clothes) classifier for number of washes"
+    ],
+    "notation": "水",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shuiguo",
+    "trans": [
+      "fruit",
+      "CL:個|个[gè]"
+    ],
+    "notation": "水果",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shuijiao",
+    "trans": [
+      "to go to bed",
+      "to sleep"
+    ],
+    "notation": "睡觉",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "shuohua",
+    "trans": [
+      "to speak",
+      "to say",
+      "to talk",
+      "to gossip",
+      "to tell stories",
+      "talk",
+      "word"
+    ],
+    "notation": "说话",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "si",
+    "trans": [
+      "four",
+      "4"
+    ],
+    "notation": "四",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "sui",
+    "trans": [
+      "classifier for years (of age)",
+      "year",
+      "year (of crop harvests)"
+    ],
+    "notation": "岁",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ta",
+    "trans": [
+      "he or him",
+      "(used for either sex when the sex is unknown or unimportant)",
+      "(used before sb's name for emphasis)",
+      "(used as a meaningless mock object)",
+      "other",
+      "another"
+    ],
+    "notation": "他",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ta",
+    "trans": [
+      "she"
+    ],
+    "notation": "她",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tai",
+    "trans": [
+      "highest",
+      "greatest",
+      "too (much)",
+      "very",
+      "extremely"
+    ],
+    "notation": "太",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tianqi",
+    "trans": [
+      "weather"
+    ],
+    "notation": "天气",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "ting",
+    "trans": [
+      "to listen",
+      "to hear",
+      "to obey",
+      "a can (loanword from English \"tin\")",
+      "classifier for canned beverages"
+    ],
+    "notation": "听",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "tongxue",
+    "trans": [
+      "to study at the same school",
+      "fellow student",
+      "classmate",
+      "CL:位",
+      "個|个[gè]"
+    ],
+    "notation": "同学",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "wei",
+    "trans": [
+      "to feed"
+    ],
+    "notation": "喂",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "wo",
+    "trans": [
+      "I",
+      "me",
+      "my"
+    ],
+    "notation": "我",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "women",
+    "trans": [
+      "we",
+      "us",
+      "ourselves",
+      "our"
+    ],
+    "notation": "我们",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "wu",
+    "trans": [
+      "five",
+      "5"
+    ],
+    "notation": "五",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xihuan",
+    "trans": [
+      "to like",
+      "to be fond of"
+    ],
+    "notation": "喜欢",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xia",
+    "trans": [
+      "down",
+      "downwards",
+      "below",
+      "lower",
+      "later",
+      "next (week etc)",
+      "second (of two parts)",
+      "to decline",
+      "to go down"
+    ],
+    "notation": "下",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xiawu",
+    "trans": [
+      "afternoon",
+      "CL:個|个[gè]",
+      "p.m."
+    ],
+    "notation": "下午",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xiayu",
+    "trans": [
+      "to rain",
+      "rainy"
+    ],
+    "notation": "下雨",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xiansheng",
+    "trans": [
+      "teacher",
+      "husband",
+      "doctor (topolect)",
+      "CL:位[wèi]"
+    ],
+    "notation": "先生",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xianzai",
+    "trans": [
+      "now",
+      "at present",
+      "at the moment",
+      "modern",
+      "current",
+      "nowadays"
+    ],
+    "notation": "现在",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xiang",
+    "trans": [
+      "to think",
+      "to believe",
+      "to suppose",
+      "to wish",
+      "to want",
+      "to miss"
+    ],
+    "notation": "想",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xiao",
+    "trans": [
+      "small",
+      "tiny",
+      "few",
+      "young"
+    ],
+    "notation": "小",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xiaojie",
+    "trans": [
+      "young lady",
+      "miss",
+      "(slang) prostitute",
+      "CL:個|个",
+      "位[wèi]"
+    ],
+    "notation": "小姐",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xie",
+    "trans": [
+      "some",
+      "few",
+      "several",
+      "measure word indicating a small amount or small number (greater than 1)"
+    ],
+    "notation": "些",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xie",
+    "trans": [
+      "to write"
+    ],
+    "notation": "写",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xiexie",
+    "trans": [
+      "to thank",
+      "thanks"
+    ],
+    "notation": "谢谢",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xingqi",
+    "trans": [
+      "week",
+      "CL:個|个[gè]",
+      "day of the week",
+      "Sunday"
+    ],
+    "notation": "星期",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xuesheng",
+    "trans": [
+      "student",
+      "schoolchild"
+    ],
+    "notation": "学生",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xuexi",
+    "trans": [
+      "to learn",
+      "to study"
+    ],
+    "notation": "学习",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "xuexiao",
+    "trans": [
+      "school",
+      "CL:所[suǒ]"
+    ],
+    "notation": "学校",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "yi",
+    "trans": [
+      "one",
+      "1",
+      "single",
+      "a (article)",
+      "as soon as",
+      "entire",
+      "whole",
+      "all",
+      "throughout",
+      "\"one\" radical in Chinese characters (Kangxi radical 1)"
+    ],
+    "notation": "一",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "yifu",
+    "trans": [
+      "clothes",
+      "CL:件",
+      "套[tào]"
+    ],
+    "notation": "衣服",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "yisheng",
+    "trans": [
+      "doctor",
+      "CL:個|个",
+      "位",
+      "名[míng]"
+    ],
+    "notation": "医生",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "yiyuan",
+    "trans": [
+      "hospital",
+      "CL:所",
+      "家",
+      "座[zuò]"
+    ],
+    "notation": "医院",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "yizi",
+    "trans": [
+      "chair",
+      "CL:把",
+      "套[tào]"
+    ],
+    "notation": "椅子",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "you",
+    "trans": [
+      "to have",
+      "there is",
+      "there are",
+      "to exist",
+      "to be"
+    ],
+    "notation": "有",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "yue",
+    "trans": [
+      "moon",
+      "month",
+      "CL:個|个",
+      "輪|轮[lún]"
+    ],
+    "notation": "月",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zai",
+    "trans": [
+      "(located) at",
+      "(to be) in",
+      "to exist",
+      "in the middle of doing sth",
+      "(indicating an action in progress)"
+    ],
+    "notation": "在",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zaijian",
+    "trans": [
+      "goodbye",
+      "see you again later"
+    ],
+    "notation": "再见",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zenme",
+    "trans": [
+      "variant of 怎麼|怎么[zěn me]"
+    ],
+    "notation": "怎么",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zenmeyang",
+    "trans": [
+      "how?",
+      "how about?",
+      "how was it?",
+      "how are things?"
+    ],
+    "notation": "怎么样",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zhe",
+    "trans": [
+      "this",
+      "these",
+      "(commonly pr.  before a classifier, esp. in Beijing)"
+    ],
+    "notation": "这",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zhongguo",
+    "trans": [
+      "China",
+      "Middle Kingdom"
+    ],
+    "notation": "中国",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zhongwu",
+    "trans": [
+      "noon",
+      "midday",
+      "CL:個|个[gè]"
+    ],
+    "notation": "中午",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zhu",
+    "trans": [
+      "to live",
+      "to dwell",
+      "to stay",
+      "to reside",
+      "to stop",
+      "(suffix indicating firmness, steadiness, or coming to a halt)"
+    ],
+    "notation": "住",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zhuozi",
+    "trans": [
+      "table",
+      "desk",
+      "CL:張|张",
+      "套[tào]"
+    ],
+    "notation": "桌子",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zi",
+    "trans": [
+      "letter",
+      "symbol",
+      "character",
+      "word",
+      "CL:個|个[gè]",
+      "courtesy or style name traditionally given to males aged 20 in dynastic China"
+    ],
+    "notation": "字",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zuotian",
+    "trans": [
+      "yesterday"
+    ],
+    "notation": "昨天",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zuo",
+    "trans": [
+      "to sit",
+      "to take a seat",
+      "to take (a bus, airplane etc)",
+      "to bear fruit",
+      "variant of 座[zuò]"
+    ],
+    "notation": "坐",
+    "usphone": "",
+    "ukphone": ""
+  },
+  {
+    "name": "zuo",
+    "trans": [
+      "to do",
+      "to make",
+      "to produce",
+      "to write",
+      "to compose",
+      "to act as",
+      "to engage in",
+      "to hold (a party)",
+      "to be",
+      "to become",
+      "to function (in some capacity)",
+      "to serve as",
+      "to be used for",
+      "to form (a bond or relationship)",
+      "to pretend",
+      "to feign",
+      "to act a part",
+      "to put on appearance"
+    ],
+    "notation": "做",
+    "usphone": "",
+    "ukphone": ""
+  }
+]
