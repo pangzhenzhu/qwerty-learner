@@ -21,7 +21,7 @@ export type GalleryState = {
 }
 
 const initialGalleryState: GalleryState = {
-  currentLanguageTab: 'en',
+  currentLanguageTab: 'zh',
 }
 
 export const GalleryContext = createContext<{
@@ -68,7 +68,7 @@ export default function GalleryPage() {
           <div className="mt-20 flex w-full flex-1 flex-col items-center justify-center overflow-y-auto">
             <div className="flex h-full flex-col overflow-y-auto">
               <div className="flex h-20 w-full items-center justify-between pb-6 pr-20">
-                <LanguageTabSwitcher />
+                {/* <LanguageTabSwitcher /> */}
                 <DictRequest />
               </div>
               <ScrollArea.Root className="flex-1 overflow-y-auto">

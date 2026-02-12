@@ -48,6 +48,20 @@ function Root() {
     return () => window.removeEventListener('resize', handleResize)
   }, [])
 
+  useEffect(() => {
+    // Clean up invalid dictionary ID from local storage to prevent runtime errors
+    // when the previously selected dictionary (e.g., 'cet4') no longer exists.
+    try {
+      const storedDictId = localStorage.getItem('currentDict')
+      if (storedDictId && JSON.parse(storedDictId) === 'cet4') {
+        localStorage.removeItem('currentDict')
+        localStorage.removeItem('currentChapter')
+      }
+    } catch (e) {
+      console.error('Failed to cleanup local storage', e)
+    }
+  }, [])
+
   return (
     <React.StrictMode>
       <BrowserRouter basename={REACT_APP_DEPLOY_ENV === 'pages' ? '/qwerty-learner' : ''}>
