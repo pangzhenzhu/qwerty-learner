@@ -1,13 +1,14 @@
 import { SoundIcon } from './SoundIcon'
 import usePronunciationSound from '@/hooks/usePronunciation'
 import type { Word } from '@/typings'
-import { useCallback, useEffect, useImperativeHandle } from 'react'
+import { useCallback, useEffect, useImperativeHandle, useState } from 'react'
 import React from 'react'
 
 export const WordPronunciationIcon = React.forwardRef<
   WordPronunciationIconRef,
   { word: Word; lang: string; className?: string; iconClassName?: string }
 >(({ word, lang, className, iconClassName }, ref) => {
+  const [isTTSPlaying, setIsTTSPlaying] = useState(false)
   const currentWord = () => {
     if (lang === 'hapin') {
       if (/[\u0400-\u04FF]/.test(word.notation || '')) {
@@ -27,11 +28,31 @@ export const WordPronunciationIcon = React.forwardRef<
 
   const playSound = useCallback(() => {
     stop()
-    play()
-  }, [play, stop])
+    if (window.speechSynthesis) {
+      window.speechSynthesis.cancel()
+    }
+
+    if (lang === 'chinese' && word.notation) {
+      // Replace Word(Phonetic) with Phonetic for TTS
+      const textToSpeak = word.notation.replace(/(.+?)[(（](.+?)[)）]/g, '$2')
+      const u = new SpeechSynthesisUtterance(textToSpeak)
+      u.lang = 'zh-CN'
+      u.onstart = () => setIsTTSPlaying(true)
+      u.onend = () => setIsTTSPlaying(false)
+      u.onerror = () => setIsTTSPlaying(false)
+      window.speechSynthesis.speak(u)
+    } else {
+      play()
+    }
+  }, [play, stop, lang, word])
 
   useEffect(() => {
-    return stop
+    return () => {
+      stop()
+      if (window.speechSynthesis) {
+        window.speechSynthesis.cancel()
+      }
+    }
   }, [word, stop])
 
   useImperativeHandle(
@@ -44,7 +65,7 @@ export const WordPronunciationIcon = React.forwardRef<
 
   return (
     <SoundIcon
-      animated={isPlaying}
+      animated={isPlaying || isTTSPlaying}
       onClick={playSound}
       className={`cursor-pointer text-gray-600 ${className}`}
       iconClassName={iconClassName}

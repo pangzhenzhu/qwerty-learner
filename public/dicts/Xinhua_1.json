@@ -85,7 +85,7 @@
   { "name": "jin", "notation": "进", "trans": ["进入 (enter)", "进步 (advance)"] },
   { "name": "zhong", "notation": "种", "trans": ["种类 (kind/type)", "种子 (seed)"] },
   { "name": "jiang", "notation": "将", "trans": ["将来 (future)", "将要 (will)"] },
-  { "name": "hai", "notation": "还", "trans": ["还有 (also/still)", "归还 (return)"] },
+  { "name": "hai", "notation": "还(hái)", "trans": ["还有 (also/still)", "归还 (return)"] },
   { "name": "fen", "notation": "分", "trans": ["分开 (divide)", "分数 (minute/score)"] },
   { "name": "ci", "notation": "此", "trans": ["这 (this)"] },
   { "name": "xin", "notation": "心", "trans": ["心脏 (heart)", "心情 (mind)"] },

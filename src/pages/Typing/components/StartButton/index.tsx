@@ -5,6 +5,9 @@ import { autoUpdate, offset, useFloating, useHover, useInteractions } from '@flo
 import { useAtomValue } from 'jotai'
 import { useCallback, useContext, useState } from 'react'
 import { useHotkeys } from 'react-hotkeys-hook'
+import IconPlayerPause from '~icons/tabler/player-pause'
+import IconPlayerPlay from '~icons/tabler/player-play'
+import IconRotate from '~icons/tabler/rotate'
 
 export default function StartButton({ isLoading }: { isLoading: boolean }) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
@@ -32,40 +35,34 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
   const { getReferenceProps, getFloatingProps } = useInteractions([hoverButton])
 
   return (
-    <Tooltip content={`${state.isTyping ? '暂停' : '开始'} （Enter）`} className="box-content h-7 w-8 px-6 py-1">
-      <div
-        ref={refs.setReference}
-        {...getReferenceProps()}
-        className={`${
-          state.isTyping
-            ? 'bg-gray-400 shadow-gray-200 dark:bg-gray-600  dark:shadow-none'
-            : 'bg-indigo-500 shadow-indigo-300 dark:shadow-indigo-500/60'
-        } ${
-          isShowReStartButton ? 'h-20' : 'h-auto'
-        } flex-column absolute left-0 top-0 w-20 rounded-lg shadow-lg transition-colors duration-200`}
-      >
+    <Tooltip content={`${state.isTyping ? '暂停' : '开始'} （Enter）`} className="h-7 w-7">
+      <div ref={refs.setReference} {...getReferenceProps()} className="relative flex items-center justify-center">
         <button
-          className={`${
-            state.isTyping ? 'bg-gray-400  dark:bg-gray-700 dark:hover:bg-gray-500' : 'bg-indigo-500'
-          } my-btn-primary w-20 shadow`}
+          className={`rounded p-[2px] text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
+            state.isTyping ? 'text-gray-600 dark:text-gray-400' : 'text-indigo-500'
+          }`}
           type="button"
           onClick={onToggleIsTyping}
           aria-label={state.isTyping ? '暂停' : '开始'}
         >
-          <span className="font-medium">{state.isTyping ? '暂停' : '开始'}</span>
+          {state.isTyping ? <IconPlayerPause /> : <IconPlayerPlay />}
         </button>
         {isShowReStartButton && (
-          <div className="absolute bottom-0 flex w-20 justify-center" ref={refs.setFloating} {...getFloatingProps()}>
-            <button
-              className={`${
-                state.isTyping ? 'bg-gray-500 dark:bg-gray-700 dark:hover:bg-gray-500 ' : 'bg-indigo-400 '
-              } my-btn-primary mb-1 mt-1 w-18  transition-colors duration-200`}
-              type="button"
-              onClick={onClickRestart}
-              aria-label={'重新开始'}
-            >
-              重新开始
-            </button>
+          <div
+            className="absolute left-1/2 top-full z-50 mt-1 flex -translate-x-1/2 justify-center"
+            ref={refs.setFloating}
+            {...getFloatingProps()}
+          >
+            <Tooltip content="重新开始" placement="bottom">
+              <button
+                className="rounded-full bg-white p-1 text-indigo-500 shadow-md hover:text-indigo-600 dark:bg-gray-800"
+                type="button"
+                onClick={onClickRestart}
+                aria-label="重新开始"
+              >
+                <IconRotate className="h-4 w-4" />
+              </button>
+            </Tooltip>
           </div>
         )}
       </div>
