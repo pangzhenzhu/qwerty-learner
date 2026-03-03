@@ -1,10 +1,13 @@
 import usePronunciationSound from '@/hooks/usePronunciation'
+import { currentDictInfoAtom } from '@/store'
 import type { WordWithIndex } from '@/typings'
 import { flip, offset, shift, useFloating, useHover, useInteractions, useRole } from '@floating-ui/react'
-import { useCallback, useState } from 'react'
+import { useAtomValue } from 'jotai'
+import { useCallback, useMemo, useState } from 'react'
 
 export default function WordChip({ word }: { word: WordWithIndex }) {
   const [showTranslation, setShowTranslation] = useState(false)
+  const currentLanguage = useAtomValue(currentDictInfoAtom).language
   const { x, y, strategy, refs, context } = useFloating({
     open: showTranslation,
     onOpenChange: setShowTranslation,
@@ -13,7 +16,13 @@ export default function WordChip({ word }: { word: WordWithIndex }) {
   const hover = useHover(context)
   const role = useRole(context, { role: 'tooltip' })
   const { getReferenceProps, getFloatingProps } = useInteractions([hover, role])
-  const { play, stop } = usePronunciationSound(word.name, false)
+  const pronunciationWord = useMemo(() => {
+    if (currentLanguage === 'chinese' || currentLanguage === 'zh') {
+      return (word.notation || '').replace(/[（(].*?[)）]/g, '').trim() || word.name
+    }
+    return word.name
+  }, [currentLanguage, word.name, word.notation])
+  const { play, stop } = usePronunciationSound(pronunciationWord, false)
 
   const onClickWord = useCallback(() => {
     stop()

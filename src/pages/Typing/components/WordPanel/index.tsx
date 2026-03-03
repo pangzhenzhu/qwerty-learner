@@ -6,7 +6,14 @@ import Phonetic from './components/Phonetic'
 import Translation from './components/Translation'
 import WordComponent from './components/Word'
 import { usePrefetchPronunciationSound } from '@/hooks/usePronunciation'
-import { isReviewModeAtom, isShowPrevAndNextWordAtom, loopWordConfigAtom, phoneticConfigAtom, reviewModeInfoAtom } from '@/store'
+import {
+  currentDictInfoAtom,
+  isReviewModeAtom,
+  isShowPrevAndNextWordAtom,
+  loopWordConfigAtom,
+  phoneticConfigAtom,
+  reviewModeInfoAtom,
+} from '@/store'
 import type { Word } from '@/typings'
 import { useAtomValue, useSetAtom } from 'jotai'
 import { useCallback, useContext, useMemo, useState } from 'react'
@@ -20,6 +27,7 @@ export default function WordPanel() {
   const [wordComponentKey, setWordComponentKey] = useState(0)
   const [currentWordExerciseCount, setCurrentWordExerciseCount] = useState(0)
   const { times: loopWordTimes } = useAtomValue(loopWordConfigAtom)
+  const currentLanguage = useAtomValue(currentDictInfoAtom).language
   const currentWord = state.chapterData.words[state.chapterData.index]
   const nextWord = state.chapterData.words[state.chapterData.index + 1] as Word | undefined
 
@@ -35,7 +43,15 @@ export default function WordPanel() {
     return newIndex > state.chapterData.words.length - 1 ? state.chapterData.words.length - 1 : newIndex
   }, [state.chapterData.index, state.chapterData.words.length])
 
-  usePrefetchPronunciationSound(nextWord?.name)
+  const prefetchWord = useMemo(() => {
+    if (!nextWord) return undefined
+    if (currentLanguage === 'chinese' || currentLanguage === 'zh') {
+      return (nextWord.notation || '').replace(/[（(].*?[)）]/g, '').trim() || nextWord.name
+    }
+    return nextWord.name
+  }, [currentLanguage, nextWord])
+
+  usePrefetchPronunciationSound(prefetchWord)
 
   const reloadCurrentWordComponent = useCallback(() => {
     setWordComponentKey((old) => old + 1)
@@ -169,7 +185,7 @@ export default function WordPanel() {
               <div className="absolute flex h-full w-full justify-center">
                 <div className="z-10 flex w-full items-center backdrop-blur-sm">
                   <p className="w-full select-none text-center text-xl text-gray-600 dark:text-gray-50">
-                    按任意键{state.timerData.time ? '继续' : '开始'}
+                    Press any key to {state.timerData.time ? 'continue' : 'start'}
                   </p>
                 </div>
               </div>

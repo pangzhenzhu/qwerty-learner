@@ -20,17 +20,27 @@ const PronunciationSwitcher = () => {
     const defaultPronIndex = currentDictInfo.defaultPronIndex || LANG_PRON_MAP[currentDictInfo.language].defaultPronIndex
     const defaultPron = pronunciationList[defaultPronIndex]
 
-    // if the current pronunciation is not in the pronunciation list, reset the pronunciation config to default
-    const index = pronunciationList.findIndex((item) => item.pron === pronunciationConfig.type)
-    if (index === -1) {
-      // only change the type and name, keep the isOpen state
+    const matchedPronunciation = pronunciationList.find((item) => item.pron === pronunciationConfig.type)
+    if (!matchedPronunciation) {
       setPronunciationConfig((old) => ({
         ...old,
         type: defaultPron.pron,
         name: defaultPron.name,
       }))
+    } else if (matchedPronunciation.name !== pronunciationConfig.name) {
+      setPronunciationConfig((old) => ({
+        ...old,
+        name: matchedPronunciation.name,
+      }))
     }
-  }, [currentDictInfo.defaultPronIndex, currentDictInfo.language, setPronunciationConfig, pronunciationList, pronunciationConfig.type])
+  }, [
+    currentDictInfo.defaultPronIndex,
+    currentDictInfo.language,
+    setPronunciationConfig,
+    pronunciationList,
+    pronunciationConfig.type,
+    pronunciationConfig.name,
+  ])
 
   useEffect(() => {
     const phoneticType = PRONUNCIATION_PHONETIC_MAP[pronunciationConfig.type]
@@ -100,7 +110,7 @@ const PronunciationSwitcher = () => {
     if (pronunciationConfig.isOpen) {
       return pronunciationConfig.name
     } else {
-      return '关闭'
+      return 'Off'
     }
   }, [pronunciationConfig.isOpen, pronunciationConfig.name])
 
@@ -116,7 +126,7 @@ const PronunciationSwitcher = () => {
               e.target.blur()
             }}
           >
-            <Tooltip content="发音及音标切换">{currentLabel}</Tooltip>
+            <Tooltip content="Pronunciation & Phonetic">{currentLabel}</Tooltip>
           </Popover.Button>
 
           <Transition

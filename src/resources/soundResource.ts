@@ -95,7 +95,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '普通话',
+        name: 'Mandarin',
         pron: 'zh',
       },
     ],
@@ -104,7 +104,7 @@ export const LANG_PRON_MAP: LanguagePronunciationMap = {
     defaultPronIndex: 0,
     pronunciation: [
       {
-        name: '普通话',
+        name: 'Mandarin',
         pron: 'zh',
       },
     ],

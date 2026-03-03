@@ -9,17 +9,16 @@ export const WordPronunciationIcon = React.forwardRef<
   { word: Word; lang: string; className?: string; iconClassName?: string }
 >(({ word, lang, className, iconClassName }, ref) => {
   const [isTTSPlaying, setIsTTSPlaying] = useState(false)
+  const isChineseLang = lang === 'chinese' || lang === 'zh'
   const currentWord = () => {
     if (lang === 'hapin') {
       if (/[\u0400-\u04FF]/.test(word.notation || '')) {
-        // 哈萨克语西里尔文字
         return word.notation || ''
       } else {
-        // 哈萨克语老文字
         return word.trans[2]
       }
-    } else if (lang === 'chinese') {
-      return word.notation || word.name
+    } else if (isChineseLang) {
+      return (word.notation || '').replace(/[（(].*?[)）]/g, '').trim() || word.name
     } else {
       return word.name
     }
@@ -32,8 +31,7 @@ export const WordPronunciationIcon = React.forwardRef<
       window.speechSynthesis.cancel()
     }
 
-    if (lang === 'chinese' && word.notation) {
-      // Replace Word(Phonetic) with Phonetic for TTS
+    if (isChineseLang && word.notation && typeof window !== 'undefined' && 'speechSynthesis' in window) {
       const textToSpeak = word.notation.replace(/(.+?)[(（](.+?)[)）]/g, '$2')
       const u = new SpeechSynthesisUtterance(textToSpeak)
       u.lang = 'zh-CN'
@@ -44,7 +42,7 @@ export const WordPronunciationIcon = React.forwardRef<
     } else {
       play()
     }
-  }, [play, stop, lang, word])
+  }, [play, stop, isChineseLang, word])
 
   useEffect(() => {
     return () => {
@@ -67,7 +65,7 @@ export const WordPronunciationIcon = React.forwardRef<
     <SoundIcon
       animated={isPlaying || isTTSPlaying}
       onClick={playSound}
-      className={`cursor-pointer text-gray-600 ${className}`}
+      className={`cursor-pointer text-indigo-500 hover:text-indigo-600 dark:text-indigo-400 ${className}`}
       iconClassName={iconClassName}
     />
   )
