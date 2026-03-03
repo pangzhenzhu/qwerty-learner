@@ -28,9 +28,9 @@ body,
 }
 
 .my-card {
-  box-shadow: 0px 100px 80px rgba(50, 46, 129, 0.07), 0px 41.7776px 33.4221px rgba(50, 46, 129, 0.0503198),
-    0px 22.3363px 17.869px rgba(50, 46, 129, 0.0417275), 0px 12.5216px 10.0172px rgba(50, 46, 129, 0.035),
-    0px 6.6501px 5.32008px rgba(50, 46, 129, 0.0282725), 0px 2.76726px 2.21381px rgba(50, 46, 129, 0.0196802);
+  box-shadow: 0px 100px 80px rgba(249, 115, 22, 0.07), 0px 41.7776px 33.4221px rgba(249, 115, 22, 0.0503198),
+    0px 22.3363px 17.869px rgba(249, 115, 22, 0.0417275), 0px 12.5216px 10.0172px rgba(249, 115, 22, 0.035),
+    0px 6.6501px 5.32008px rgba(249, 115, 22, 0.0282725), 0px 2.76726px 2.21381px rgba(249, 115, 22, 0.0196802);
 }
 
 /* Well, TailwindCSS does’t have `text-shadow` classes. */
@@ -64,7 +64,7 @@ body,
     @apply flex h-10 w-auto cursor-pointer
       flex-row items-center
     justify-center rounded-md border-2
-      border-solid border-indigo-400 bg-white px-2 py-0.5 transition-colors duration-100 hover:bg-indigo-100 dark:border-slate-800
+      border-solid border-orange-500 bg-white px-2 py-0.5 transition-colors duration-100 hover:bg-orange-100 dark:border-slate-800
       dark:bg-slate-700 dark:hover:bg-slate-600 md:h-12
       md:px-5 md:py-1;
   }
@@ -80,7 +80,7 @@ body,
   }
 
   .my-btn-primary {
-    @apply flex items-center justify-center rounded-lg bg-indigo-400 px-6 py-1 text-lg text-white hover:opacity-90 focus:outline-none dark:text-opacity-80;
+    @apply flex items-center justify-center rounded-lg bg-orange-500 px-6 py-1 text-lg text-white hover:opacity-90 focus:outline-none dark:text-opacity-80;
   }
 
   .my-btn-info-panel {
@@ -98,7 +98,7 @@ body,
     @apply relative inline-flex h-6 w-12 shrink-0 cursor-pointer items-center rounded-full border-3 border-transparent bg-gray-300 transition-colors duration-200 ease-in-out focus:outline-none;
   }
   .switch-root[data-headlessui-state='checked'] {
-    @apply bg-indigo-400;
+    @apply bg-orange-500;
   }
   .switch-thumb {
     @apply pointer-events-none inline-block h-4 w-4 translate-x-0 transform rounded-full bg-white shadow-lg ring-0 transition duration-200 ease-in-out;
@@ -120,13 +120,13 @@ body,
     @apply absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg  focus:outline-none dark:bg-gray-600;
   }
   .listbox-options > li {
-    @apply relative cursor-pointer select-none py-2 pl-10 pr-4 text-gray-900 ui-active:bg-indigo-100 ui-active:text-indigo-900 dark:text-white dark:text-opacity-60 dark:ui-active:bg-gray-500 dark:ui-active:text-indigo-300;
+    @apply relative cursor-pointer select-none py-2 pl-10 pr-4 text-gray-900 ui-active:bg-orange-100 ui-active:text-orange-900 dark:text-white dark:text-opacity-60 dark:ui-active:bg-gray-500 dark:ui-active:text-orange-300;
   }
   .listbox-options > li > span:first-child {
     @apply block truncate font-normal  ui-selected:font-medium;
   }
   .listbox-options-icon {
-    @apply absolute inset-y-0 left-0 flex items-center pl-3 text-indigo-600 dark:text-indigo-400;
+    @apply absolute inset-y-0 left-0 flex items-center pl-3 text-orange-600 dark:text-orange-400;
   }
 
   .slider {
@@ -139,10 +139,127 @@ body,
     @apply relative h-[5px] flex-grow rounded-full bg-gray-200;
   }
   .slider > span:nth-child(1) > span:nth-child(1) {
-    @apply absolute h-full rounded-full bg-indigo-400;
+    @apply absolute h-full rounded-full bg-orange-500;
   }
   .slider > span:nth-child(2) {
     @apply block h-4 w-4 cursor-pointer rounded-full border border-gray-200 bg-white drop-shadow-md;
+  }
+}
+
+@layer utilities {
+  .text-indigo-300 {
+    @apply text-orange-300;
+  }
+  .text-indigo-400 {
+    @apply text-orange-400;
+  }
+  .text-indigo-500 {
+    @apply text-orange-500;
+  }
+  .text-indigo-600 {
+    @apply text-orange-600;
+  }
+  .text-indigo-700 {
+    @apply text-orange-700;
+  }
+  .text-indigo-900 {
+    @apply text-orange-900;
+  }
+
+  .bg-indigo-50 {
+    @apply bg-orange-50;
+  }
+  .bg-indigo-100 {
+    @apply bg-orange-100;
+  }
+  .bg-indigo-300 {
+    @apply bg-orange-300;
+  }
+  .bg-indigo-400 {
+    @apply bg-orange-400;
+  }
+  .bg-indigo-500 {
+    @apply bg-orange-500;
+  }
+  .bg-indigo-600 {
+    @apply bg-orange-600;
+  }
+  .bg-indigo-700 {
+    @apply bg-orange-700;
+  }
+
+  .border-indigo-100 {
+    @apply border-orange-100;
+  }
+  .border-indigo-200 {
+    @apply border-orange-200;
+  }
+  .border-indigo-300 {
+    @apply border-orange-300;
+  }
+  .border-indigo-400 {
+    @apply border-orange-400;
+  }
+  .border-indigo-500 {
+    @apply border-orange-500;
+  }
+  .border-indigo-600 {
+    @apply border-orange-600;
+  }
+
+  .ring-indigo-400 {
+    @apply ring-orange-400;
+  }
+  .ring-indigo-500 {
+    @apply ring-orange-500;
+  }
+  .ring-indigo-600 {
+    @apply ring-orange-600;
+  }
+
+  .hover\:bg-indigo-300:hover {
+    @apply bg-orange-300;
+  }
+  .hover\:bg-indigo-400:hover {
+    @apply bg-orange-400;
+  }
+  .hover\:bg-indigo-500:hover {
+    @apply bg-orange-500;
+  }
+  .hover\:bg-indigo-600:hover {
+    @apply bg-orange-600;
+  }
+  .hover\:bg-indigo-700:hover {
+    @apply bg-orange-700;
+  }
+
+  .hover\:text-indigo-400:hover {
+    @apply text-orange-400;
+  }
+  .hover\:text-indigo-500:hover {
+    @apply text-orange-500;
+  }
+  .hover\:text-indigo-600:hover {
+    @apply text-orange-600;
+  }
+
+  .dark .dark\:text-indigo-300 {
+    @apply text-orange-300;
+  }
+  .dark .dark\:text-indigo-400 {
+    @apply text-orange-400;
+  }
+  .dark .dark\:text-indigo-500 {
+    @apply text-orange-500;
+  }
+  .dark .dark\:text-indigo-600 {
+    @apply text-orange-600;
+  }
+  .dark .dark\:bg-indigo-400 {
+    @apply bg-orange-400;
+  }
+  .dark .dark\:bg-indigo-600 {
+    @apply bg-orange-600;
   }
 }
 

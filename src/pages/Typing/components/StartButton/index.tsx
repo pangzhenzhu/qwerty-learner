@@ -38,8 +38,8 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
     <Tooltip content={`${state.isTyping ? '暂停' : '开始'} （Enter）`} className="h-7 w-7">
       <div ref={refs.setReference} {...getReferenceProps()} className="relative flex items-center justify-center">
         <button
-          className={`rounded p-[2px] text-lg transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none ${
-            state.isTyping ? 'text-gray-600 dark:text-gray-400' : 'text-indigo-500'
+          className={`rounded p-[2px] text-lg transition-colors duration-300 ease-in-out hover:bg-orange-500 hover:text-white focus:outline-none ${
+            state.isTyping ? 'text-gray-600 dark:text-gray-400' : 'text-orange-500'
           }`}
           type="button"
           onClick={onToggleIsTyping}
@@ -55,7 +55,7 @@ export default function StartButton({ isLoading }: { isLoading: boolean }) {
           >
             <Tooltip content="重新开始" placement="bottom">
               <button
-                className="rounded-full bg-white p-1 text-indigo-500 shadow-md hover:text-indigo-600 dark:bg-gray-800"
+                className="rounded-full bg-white p-1 text-orange-500 shadow-md hover:text-orange-600 dark:bg-gray-800"
                 type="button"
                 onClick={onClickRestart}
                 aria-label="重新开始"
