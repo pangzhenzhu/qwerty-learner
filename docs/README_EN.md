@@ -3,7 +3,7 @@
 </div>
 
 <h1 align="center">
-  QWERTY Learner
+  Hanzi Learner
 </h1>
 <p align="center">
   Design for people want to memorize words and practice typings.
@@ -30,13 +30,13 @@
 
 ## 📸 Online Access
 
-We have deployed QWERTY Learner on many platforms. You can try QWERTY Learner in following ways.
+We have deployed Hanzi Learner on many platforms. You can try Hanzi Learner in following ways.
 
 - Vercel: <https://qwerty.kaiyi.cool/>, or <https://qwerty-learner.vercel.app/>.
 - GitHub Pages: <https://kaiyiwing.github.io/qwerty-learner/>.
 - Gitee Pages (recommended for people in mainland China): <https://kaiyiwing.gitee.io/qwerty-learner/>.
 
-QWERTY Learner also has a Visual Studio Code plugin. With a single click and you will be able to practice anytime.
+Hanzi Learner also has a Visual Studio Code plugin. With a single click and you will be able to practice anytime.
 
 - Plugin: [VSCode Plugin Market](https://marketplace.visualstudio.com/items?itemName=Kaiyi.qwerty-learner)
 - Project: [GitHub](https://github.com/Kaiyiwing/qwerty-learner-vscode)

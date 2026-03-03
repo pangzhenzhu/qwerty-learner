@@ -42,7 +42,7 @@ const App: React.FC = () => {
     if (!IsDesktop()) {
       setTimeout(() => {
         alert(
-          ' Qwerty Learner 目的为提高键盘工作者的英语输入效率，目前暂未适配移动端，希望您使用桌面端浏览器访问。如您使用的是 Ipad 等平板电脑设备，可以使用外接键盘使用本软件。',
+          ' Hanzi Learner 目的为提高键盘工作者的英语输入效率，目前暂未适配移动端，希望您使用桌面端浏览器访问。如您使用的是 Ipad 等平板电脑设备，可以使用外接键盘使用本软件。',
         )
       }, 500)
     }
@@ -147,7 +147,7 @@ const App: React.FC = () => {
             </button>
           </Tooltip>
         </Header>
-        <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-center pb-5">
+        <div className="container mx-auto flex h-full flex-1 flex-col items-center justify-start pb-5 pt-2">
           <div className="container relative mx-auto flex h-full flex-col items-center">
             <div className="container flex flex-grow items-center justify-center">
               {isLoading ? (
