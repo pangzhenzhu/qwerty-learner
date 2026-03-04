@@ -32,7 +32,7 @@
 
 We have deployed Hanzi Learner on many platforms. You can try Hanzi Learner in following ways.
 
-- Vercel: <https://qwerty.kaiyi.cool/>, or <https://qwerty-learner.vercel.app/>.
+- Vercel: <http://easilyhanzi.xyz/>, or <https://qwerty-learner.vercel.app/>.
 - GitHub Pages: <https://kaiyiwing.github.io/qwerty-learner/>.
 - Gitee Pages (recommended for people in mainland China): <https://kaiyiwing.gitee.io/qwerty-learner/>.
 

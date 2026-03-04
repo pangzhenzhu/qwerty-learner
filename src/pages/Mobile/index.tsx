@@ -75,7 +75,7 @@ const MobilePage: React.FC = () => {
           </div>
         </div>
         <a
-          href="https://qwerty.kaiyi.cool/"
+          href="https://easilyhanzi.xyz/"
           target="_blank"
           rel="noopener noreferrer"
           className="hidden items-center gap-2 rounded-xl bg-gray-900 px-6 py-3 text-sm font-medium text-white transition-all duration-200 hover:-translate-y-0.5 hover:bg-gray-800 hover:shadow-lg md:flex"
@@ -91,7 +91,7 @@ const MobilePage: React.FC = () => {
           </svg>
         </a>
         <a
-          href="https://qwerty.kaiyi.cool/"
+          href="https://easilyhanzi.xyz/"
           target="_blank"
           rel="noopener noreferrer"
           className="flex items-center gap-1 rounded-xl bg-gray-900 px-4 py-2.5 text-sm text-white transition-all duration-200 hover:bg-gray-800 md:hidden"
@@ -113,7 +113,7 @@ const MobilePage: React.FC = () => {
         <div className="mx-auto max-w-7xl">
           <ol className="flex items-center space-x-2 text-sm text-gray-500" itemScope itemType="https://schema.org/BreadcrumbList">
             <li itemProp="itemListElement" itemScope itemType="https://schema.org/ListItem">
-              <a href="https://qwerty.kaiyi.cool/" className="transition-colors hover:text-indigo-600" itemProp="item">
+              <a href="https://easilyhanzi.xyz/" className="transition-colors hover:text-indigo-600" itemProp="item">
                 <span itemProp="name">首页</span>
               </a>
               <meta itemProp="position" content="1" />
