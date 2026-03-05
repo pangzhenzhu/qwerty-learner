@@ -4269,7 +4269,7 @@ const chineseExam: DictionaryResource[] = [
 const indonesianDicts: DictionaryResource[] = [
   {
     id: 'indonesian_highFrequency_3043',
-    name: 'Indonesian High-Frequency Vocabulary',
+    name: '印尼语高频词汇',
     description: 'Indonesian High-Frequency Words',
     category: 'Indonesian',
     tags: ['Basic'],
@@ -4284,7 +4284,9 @@ const indonesianDicts: DictionaryResource[] = [
  * Built-in dictionaries in an array.
  * Why arrays? Because it keeps the order across browsers.
  */
-export const dictionaryResources: DictionaryResource[] = [...chineseExam]
+export const dictionaryResources: DictionaryResource[] = [
+  ...chineseExam,
+]
 
 export const dictionaries: Dictionary[] = dictionaryResources.map((resource) => ({
   ...resource,
