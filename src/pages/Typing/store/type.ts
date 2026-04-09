@@ -8,6 +8,10 @@ export type ChapterData = {
   index: number
   // 输入的单词数
   wordCount: number
+  // 按词条项统计的输入数，用于中文等非逐字母统计场景
+  itemInputCount: number
+  // 按词条项统计的正确数
+  itemCorrectCount: number
   // 输入正确的单词数
   correctCount: number
   // 输入错误的单词数

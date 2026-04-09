@@ -11,6 +11,8 @@ export const initialState: TypingState = {
     words: [],
     index: 0,
     wordCount: 0,
+    itemInputCount: 0,
+    itemCorrectCount: 0,
     correctCount: 0,
     wrongCount: 0,
     wordRecordIds: [],
@@ -72,10 +74,11 @@ export type TypingStateAction =
       type: TypingStateActionType.NEXT_WORD
       payload?: {
         updateReviewRecord?: (state: TypingState) => void
+        isItemCorrect?: boolean
       }
     }
-  | { type: TypingStateActionType.LOOP_CURRENT_WORD }
-  | { type: TypingStateActionType.FINISH_CHAPTER }
+  | { type: TypingStateActionType.LOOP_CURRENT_WORD; payload?: { isItemCorrect?: boolean } }
+  | { type: TypingStateActionType.FINISH_CHAPTER; payload?: { isItemCorrect?: boolean } }
   | { type: TypingStateActionType.SKIP_WORD }
   | { type: TypingStateActionType.SKIP_2_WORD_INDEX; newIndex: number }
   | { type: TypingStateActionType.REPEAT_CHAPTER; shouldShuffle: boolean }
@@ -133,6 +136,10 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.NEXT_WORD: {
       state.chapterData.index += 1
       state.chapterData.wordCount += 1
+      state.chapterData.itemInputCount += 1
+      if (action.payload?.isItemCorrect) {
+        state.chapterData.itemCorrectCount += 1
+      }
       state.isShowSkip = false
 
       if (action?.payload?.updateReviewRecord) {
@@ -143,9 +150,17 @@ export const typingReducer = (state: TypingState, action: TypingStateAction) => 
     case TypingStateActionType.LOOP_CURRENT_WORD:
       state.isShowSkip = false
       state.chapterData.wordCount += 1
+      state.chapterData.itemInputCount += 1
+      if (action.payload?.isItemCorrect) {
+        state.chapterData.itemCorrectCount += 1
+      }
       break
     case TypingStateActionType.FINISH_CHAPTER:
       state.chapterData.wordCount += 1
+      state.chapterData.itemInputCount += 1
+      if (action.payload?.isItemCorrect) {
+        state.chapterData.itemCorrectCount += 1
+      }
       state.isTyping = false
       state.isFinished = true
       state.isShowSkip = false

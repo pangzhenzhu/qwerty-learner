@@ -43,18 +43,18 @@ export default function Switcher() {
 
   return (
     <div className="flex items-center justify-center gap-2">
-      <Tooltip content="音效设置">
+      <Tooltip content="Sound Settings">
         <SoundSwitcher />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="设置单个单词循环">
+      <Tooltip className="h-7 w-7" content="Word Loop Settings">
         <LoopWordSwitcher />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content={`开关默写模式（${CTRL} + V）`}>
+      <Tooltip className="h-7 w-7" content={`Toggle Dictation Mode (${CTRL} + V)`}>
         <WordDictationSwitcher />
       </Tooltip>
-      <Tooltip className="h-7 w-7" content={`开关释义显示（${CTRL} + Shift + V）`}>
+      <Tooltip className="h-7 w-7" content={`Toggle Translation (${CTRL} + Shift + V)`}>
         <button
           className={`p-[2px] ${state?.isTransVisible ? 'text-orange-500' : 'text-gray-500'} text-lg focus:outline-none`}
           type="button"
@@ -62,25 +62,25 @@ export default function Switcher() {
             changeTransVisibleState()
             e.currentTarget.blur()
           }}
-          aria-label={`开关释义显示（${CTRL} + Shift + V）`}
+          aria-label={`Toggle Translation (${CTRL} + Shift + V)`}
         >
           {state?.isTransVisible ? <IconLanguage /> : <IconLanguageOff />}
         </button>
       </Tooltip>
 
-      <Tooltip content="错题本">
+      <Tooltip content="Error Book">
         <ErrorBookButton />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="查看数据统计">
+      <Tooltip className="h-7 w-7" content="View Statistics">
         <AnalysisButton />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="汉字书写练习">
+      <Tooltip className="h-7 w-7" content="Hanzi Writing Practice">
         <WritingButton />
       </Tooltip>
 
-      <Tooltip className="h-7 w-7" content="开关深色模式">
+      <Tooltip className="h-7 w-7" content="Toggle Dark Mode">
         <button
           className={`p-[2px] text-lg text-orange-500 focus:outline-none`}
           type="button"
@@ -88,15 +88,15 @@ export default function Switcher() {
             changeDarkModeState()
             e.currentTarget.blur()
           }}
-          aria-label="开关深色模式"
+          aria-label="Toggle Dark Mode"
         >
           {isOpenDarkMode ? <IconMoon className="icon" /> : <IconSun className="icon" />}
         </button>
       </Tooltip>
-      <Tooltip className="h-7 w-7" content="指法图示">
+      <Tooltip className="h-7 w-7" content="Typing Hand Position">
         <HandPositionIllustration></HandPositionIllustration>
       </Tooltip>
-      <Tooltip content="设置">
+      <Tooltip content="Settings">
         <Setting />
       </Tooltip>
     </div>

@@ -20,7 +20,7 @@ export const DictChapterButton = () => {
   }
   return (
     <>
-      <Tooltip content="词典切换">
+      <Tooltip content="Switch Dictionary">
         <NavLink
           className="block rounded-lg px-3 py-1 text-lg text-gray-600 transition-colors duration-300 ease-in-out hover:bg-indigo-400 hover:text-white focus:outline-none dark:text-white dark:text-opacity-60 dark:hover:text-opacity-100"
           to="/gallery"
@@ -29,7 +29,7 @@ export const DictChapterButton = () => {
         </NavLink>
       </Tooltip>
       {!isReviewMode && (
-        <Tooltip content="章节切换">
+        <Tooltip content="Switch Chapter">
           <Listbox value={currentChapter} onChange={setCurrentChapter}>
             <Listbox.Button
               onKeyDown={handleKeyDown}

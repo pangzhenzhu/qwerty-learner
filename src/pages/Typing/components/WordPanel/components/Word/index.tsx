@@ -31,10 +31,37 @@ import { useImmer } from 'use-immer'
 
 const vowelLetters = ['A', 'E', 'I', 'O', 'U']
 
-export default function WordComponent({ word, onFinish }: { word: Word; onFinish: () => void }) {
+function createInitialWordState(word: Word): WordState {
+  let headword = ''
+  try {
+    headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
+    headword = headword.replace(new RegExp('…', 'g'), '..')
+  } catch (e) {
+    console.error('word.name is not a string', word)
+    headword = ''
+  }
+
+  return {
+    ...structuredClone(initialWordState),
+    displayWord: headword,
+    letterStates: new Array(headword.length).fill('normal'),
+    startTime: getUtcStringForMixpanel(),
+    randomLetterVisible: headword.split('').map(() => Math.random() > 0.4),
+  }
+}
+
+export default function WordComponent({
+  word,
+  onFinish,
+  wordComponentKey,
+}: {
+  word: Word
+  onFinish: (isItemCorrect: boolean) => void
+  wordComponentKey?: number
+}) {
   // eslint-disable-next-line  @typescript-eslint/no-non-null-assertion
   const { state, dispatch } = useContext(TypingContext)!
-  const [wordState, setWordState] = useImmer<WordState>(structuredClone(initialWordState))
+  const [wordState, setWordState] = useImmer<WordState>(createInitialWordState(word))
 
   const wordDictationConfig = useAtomValue(wordDictationConfigAtom)
   const isTextSelectable = useAtomValue(isTextSelectableAtom)
@@ -53,23 +80,8 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
   const wordPronunciationIconRef = useRef<WordPronunciationIconRef>(null)
 
   useEffect(() => {
-    // run only when word changes
-    let headword = ''
-    try {
-      headword = word.name.replace(new RegExp(' ', 'g'), EXPLICIT_SPACE)
-      headword = headword.replace(new RegExp('…', 'g'), '..')
-    } catch (e) {
-      console.error('word.name is not a string', word)
-      headword = ''
-    }
-
-    const newWordState = structuredClone(initialWordState)
-    newWordState.displayWord = headword
-    newWordState.letterStates = new Array(headword.length).fill('normal')
-    newWordState.startTime = getUtcStringForMixpanel()
-    newWordState.randomLetterVisible = headword.split('').map(() => Math.random() > 0.4)
-    setWordState(newWordState)
-  }, [word, setWordState])
+    setWordState(createInitialWordState(word))
+  }, [word, wordComponentKey, setWordState])
 
   const updateInput = useCallback(
     (updateAction: WordUpdateAction) => {
@@ -269,7 +281,7 @@ export default function WordComponent({ word, onFinish }: { word: Word; onFinish
         letterMistake: wordState.letterMistake,
       })
 
-      onFinish()
+      onFinish(!wordState.hasMadeInputWrong)
     }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wordState.isFinished])

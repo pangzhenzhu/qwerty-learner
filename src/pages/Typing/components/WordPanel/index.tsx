@@ -67,44 +67,48 @@ export default function WordPanel() {
     [setReviewModeInfo],
   )
 
-  const onFinish = useCallback(() => {
-    if (state.chapterData.index < state.chapterData.words.length - 1 || currentWordExerciseCount < loopWordTimes - 1) {
-      // 用户完成当前单词
-      if (currentWordExerciseCount < loopWordTimes - 1) {
-        setCurrentWordExerciseCount((old) => old + 1)
-        dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD })
-        reloadCurrentWordComponent()
-      } else {
-        setCurrentWordExerciseCount(0)
-        if (isReviewMode) {
-          dispatch({
-            type: TypingStateActionType.NEXT_WORD,
-            payload: {
-              updateReviewRecord,
-            },
-          })
+  const onFinish = useCallback(
+    (isItemCorrect: boolean) => {
+      if (state.chapterData.index < state.chapterData.words.length - 1 || currentWordExerciseCount < loopWordTimes - 1) {
+        // 用户完成当前单词
+        if (currentWordExerciseCount < loopWordTimes - 1) {
+          setCurrentWordExerciseCount((old) => old + 1)
+          dispatch({ type: TypingStateActionType.LOOP_CURRENT_WORD, payload: { isItemCorrect } })
+          reloadCurrentWordComponent()
         } else {
-          dispatch({ type: TypingStateActionType.NEXT_WORD })
+          setCurrentWordExerciseCount(0)
+          if (isReviewMode) {
+            dispatch({
+              type: TypingStateActionType.NEXT_WORD,
+              payload: {
+                isItemCorrect,
+                updateReviewRecord,
+              },
+            })
+          } else {
+            dispatch({ type: TypingStateActionType.NEXT_WORD, payload: { isItemCorrect } })
+          }
+        }
+      } else {
+        // 用户完成当前章节
+        dispatch({ type: TypingStateActionType.FINISH_CHAPTER, payload: { isItemCorrect } })
+        if (isReviewMode) {
+          setReviewModeInfo((old) => ({ ...old, reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined }))
         }
       }
-    } else {
-      // 用户完成当前章节
-      dispatch({ type: TypingStateActionType.FINISH_CHAPTER })
-      if (isReviewMode) {
-        setReviewModeInfo((old) => ({ ...old, reviewRecord: old.reviewRecord ? { ...old.reviewRecord, isFinished: true } : undefined }))
-      }
-    }
-  }, [
-    state.chapterData.index,
-    state.chapterData.words.length,
-    currentWordExerciseCount,
-    loopWordTimes,
-    dispatch,
-    reloadCurrentWordComponent,
-    isReviewMode,
-    updateReviewRecord,
-    setReviewModeInfo,
-  ])
+    },
+    [
+      state.chapterData.index,
+      state.chapterData.words.length,
+      currentWordExerciseCount,
+      loopWordTimes,
+      dispatch,
+      reloadCurrentWordComponent,
+      isReviewMode,
+      updateReviewRecord,
+      setReviewModeInfo,
+    ],
+  )
 
   const onSkipWord = useCallback(
     (type: 'prev' | 'next') => {
@@ -191,7 +195,7 @@ export default function WordPanel() {
               </div>
             )}
             <div className="relative">
-              <WordComponent word={currentWord} onFinish={onFinish} key={wordComponentKey} />
+              <WordComponent word={currentWord} onFinish={onFinish} wordComponentKey={wordComponentKey} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
                 trans={currentWord.trans.join('；')}
