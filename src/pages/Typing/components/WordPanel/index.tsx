@@ -146,24 +146,6 @@ export default function WordPanel() {
     setIsHoveringTranslation(checked)
   }, [])
 
-  useHotkeys(
-    'tab',
-    () => {
-      handleShowTranslation(true)
-    },
-    { enableOnFormTags: true, preventDefault: true },
-    [],
-  )
-
-  useHotkeys(
-    'tab',
-    () => {
-      handleShowTranslation(false)
-    },
-    { enableOnFormTags: true, keyup: true, preventDefault: true },
-    [],
-  )
-
   const shouldShowTranslation = useMemo(() => {
     return isShowTranslation || state.isTransVisible
   }, [isShowTranslation, state.isTransVisible])
@@ -198,7 +180,7 @@ export default function WordPanel() {
               <WordComponent word={currentWord} onFinish={onFinish} wordComponentKey={wordComponentKey} />
               {phoneticConfig.isOpen && <Phonetic word={currentWord} />}
               <Translation
-                trans={currentWord.trans.join('；')}
+                trans={(currentWord.trans ?? []).join('; ')}
                 showTrans={shouldShowTranslation}
                 onMouseEnter={() => handleShowTranslation(true)}
                 onMouseLeave={() => handleShowTranslation(false)}
