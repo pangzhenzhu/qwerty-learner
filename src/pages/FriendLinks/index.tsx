@@ -1,4 +1,4 @@
-import Layout from '../../components/Layout'
+﻿import Layout from '../../components/Layout'
 import ezbdc from '@/assets/friendlinks/ezbdc.jpg'
 import kk from '@/assets/friendlinks/kk.jpg'
 import web_worker from '@/assets/friendlinks/web-worker.png'
@@ -10,7 +10,7 @@ export const FriendLinks: React.FC = () => {
       title: 'ez背单词',
       href: 'https://ezbdc.dashu.ai',
       imgSrc: ezbdc,
-      description: '一款极简的英文单词学习应用，可以非常方便高效地学习英文，具有有挑战性的单词背诵模式，无需注册，下载即用',
+      description: '一款极简的汉语单词学习应用，可以非常方便高效地学习汉语，具有有挑战性的单词背诵模式，无需注册，下载即用',
     },
     {
       title: 'Kai',

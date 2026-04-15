@@ -1,4 +1,4 @@
-import type { Dictionary, DictionaryResource } from '@/typings/index'
+﻿import type { Dictionary, DictionaryResource } from '@/typings/index'
 import { calcChapterCount } from '@/utils'
 
 // 中国考试
@@ -6,7 +6,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'cet4',
     name: 'CET-4',
-    description: '大学英语四级词库',
+    description: '大学汉语四级词库',
     category: 'China Exams',
     tags: ['College English'],
     url: '/dicts/CET4_T.json',
@@ -17,7 +17,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'cet6',
     name: 'CET-6',
-    description: '大学英语六级词库',
+    description: '大学汉语六级词库',
     category: 'China Exams',
     tags: ['College English'],
     url: '/dicts/CET6_T.json',
@@ -72,7 +72,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'kaoyan',
     name: 'Postgraduate',
-    description: '研究生英语入学考试词库',
+    description: '研究生汉语入学考试词库',
     category: 'China Exams',
     tags: ['Postgraduate'],
     url: '/dicts/KaoYan_3_T.json',
@@ -83,7 +83,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'kaoyan_2024',
     name: 'Postgraduate 2024',
-    description: '研究生英语入学考试词库 2024',
+    description: '研究生汉语入学考试词库 2024',
     category: 'China Exams',
     tags: ['Postgraduate'],
     url: '/dicts/KaoYan_2024.json',
@@ -115,8 +115,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'dancimimi_1',
-    name: '单词的秘密-英语一',
-    description: '单词的秘密英语（一）',
+    name: '单词的秘密-汉语一',
+    description: '单词的秘密汉语（一）',
     category: 'China Exams',
     tags: ['Postgraduate'],
     url: '/dicts/DanCiDeMimi_1.json',
@@ -126,8 +126,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'dancimimi_2',
-    name: '单词的秘密-英语二',
-    description: '单词的秘密英语（二）',
+    name: '单词的秘密-汉语二',
+    description: '单词的秘密汉语（二）',
     category: 'China Exams',
     tags: ['Postgraduate'],
     url: '/dicts/DanCiDeMimi_2.json',
@@ -137,8 +137,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: '2024HongBao T1',
-    name: '2024考研英语hongbaoshu(上)',
-    description: '2024考研英语hongbaoshu必考词（上）',
+    name: '2024考研汉语hongbaoshu(上)',
+    description: '2024考研汉语hongbaoshu必考词（上）',
     category: 'China Exams',
     tags: ['Postgraduate'],
     url: '/dicts/2024HongBao_T1.json',
@@ -148,8 +148,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: '2024HongBao T2',
-    name: '2024考研英语hongbaoshu(下)',
-    description: '2024考研英语hongbaoshu必考词（下）',
+    name: '2024考研汉语hongbaoshu(下)',
+    description: '2024考研汉语hongbaoshu必考词（下）',
     category: 'China Exams',
     tags: ['Postgraduate'],
     url: '/dicts/2024HongBao_T2.json',
@@ -159,7 +159,7 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'hongbaoshu-2026',
-    name: '2026考研英语 hongbaoshu',
+    name: '2026考研汉语 hongbaoshu',
     description: '2026 考研词汇 (必考词+基础词+超纲词）',
     category: 'China Exams',
     tags: ['Postgraduate'],
@@ -170,8 +170,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'English_II',
-    name: '英语二单词书',
-    description: '考研英语二单词书',
+    name: '汉语二单词书',
+    description: '考研汉语二单词书',
     category: 'China Exams',
     tags: ['Postgraduate'],
     url: '/dicts/English_II.json',
@@ -193,7 +193,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'level4',
     name: '专四',
-    description: '英语专业四级词库',
+    description: '汉语专业四级词库',
     category: 'China Exams',
     tags: ['College English'],
     url: '/dicts/Level4luan_2_T.json',
@@ -204,7 +204,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'level8',
     name: '专八',
-    description: '英语专业八级词库',
+    description: '汉语专业八级词库',
     category: 'China Exams',
     tags: ['College English'],
     url: '/dicts/Level8luan_2_T.json',
@@ -214,10 +214,10 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'archVocabulary',
-    name: '建筑专业英语',
-    description: '大学建筑专业英语词汇',
+    name: '建筑专业汉语',
+    description: '大学建筑专业汉语词汇',
     category: 'China Exams',
-    tags: ['专业英语'],
+    tags: ['专业汉语'],
     url: '/dicts/archVocabulary.json',
     length: 630,
     language: 'en',
@@ -225,10 +225,10 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'itVocabulary',
-    name: '计算机专用英语',
-    description: '大学计算机专业英语词汇',
+    name: '计算机专用汉语',
+    description: '大学计算机专业汉语词汇',
     category: 'China Exams',
-    tags: ['专业英语'],
+    tags: ['专业汉语'],
     url: '/dicts/itVocabulary.json',
     length: 1665,
     language: 'en',
@@ -237,7 +237,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'pets3',
     name: 'PETS',
-    description: '全国英语等级考试常考词汇',
+    description: '全国汉语等级考试常考词汇',
     category: 'China Exams',
     tags: ['PET'],
     url: '/dicts/PETS_3.json',
@@ -248,7 +248,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'pets3-2023',
     name: 'PETS-2023',
-    description: '全国英语等级考试常考词汇',
+    description: '全国汉语等级考试常考词汇',
     category: 'China Exams',
     tags: ['PET'],
     url: '/dicts/PETS3-2023.json',
@@ -261,7 +261,7 @@ const chinaExam: DictionaryResource[] = [
     name: '自考1800高频单词',
     description: '自考1800高频单词',
     category: 'China Exams',
-    tags: ['自考英语二'],
+    tags: ['自考汉语二'],
     url: '/dicts/self-study_English1.json',
     length: 1800,
     language: 'en',
@@ -269,10 +269,10 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'self-study_English2',
-    name: '自考英语二高频悠悠单词',
-    description: '自考英语二高频悠悠单词',
+    name: '自考汉语二高频悠悠单词',
+    description: '自考汉语二高频悠悠单词',
     category: 'China Exams',
-    tags: ['自考英语二'],
+    tags: ['自考汉语二'],
     url: '/dicts/self-study_English2.json',
     length: 2181,
     language: 'en',
@@ -280,10 +280,10 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: 'self-study_English3',
-    name: '自考英语二完整单词',
-    description: '00015自考英语二完整单词书',
+    name: '自考汉语二完整单词',
+    description: '00015自考汉语二完整单词书',
     category: 'China Exams',
-    tags: ['自考英语二'],
+    tags: ['自考汉语二'],
     url: '/dicts/self-study_English3.json',
     length: 4603,
     language: 'en',
@@ -447,7 +447,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'zhuan-cha-ben-ying-yu',
     name: 'College Transfer English Vocabulary',
-    description: '专插本英语词汇',
+    description: '专插本汉语词汇',
     category: 'China Exams',
     tags: ['Others'],
     url: '/dicts/zhuan-cha-ben.json',
@@ -458,7 +458,7 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'zhuan-sheng-ben-xue-shi',
     name: 'College Upgrade Bachelor English',
-    description: '专升本学士学位的英语',
+    description: '专升本学士学位的汉语',
     category: 'China Exams',
     tags: ['Others'],
     url: '/dicts/xueshiyingyu.json',
@@ -512,8 +512,8 @@ const chinaExam: DictionaryResource[] = [
   },
   {
     id: '2025KaoYanHongBaoShu',
-    name: '2025考研英语词汇hongbao书',
-    description: '2025考研英语词汇hongbao书',
+    name: '2025考研汉语词汇hongbao书',
+    description: '2025考研汉语词汇hongbao书',
     category: 'China Exams',
     tags: ['Postgraduate'],
     url: '/dicts/2025KaoYanHongBaoShu.json',
@@ -571,8 +571,8 @@ const chinaExam: DictionaryResource[] = [
   {
     id: 'roger',
     name: "Roger's Words",
-    description: '学习、工作常用英语',
-    category: '英语词典',
+    description: '学习、工作常用汉语',
+    category: '汉语词典',
     tags: ['课外词汇'],
     url: '/dicts/RogersWords.json',
     length: 4174,
@@ -586,7 +586,7 @@ const internationalExam: DictionaryResource[] = [
   {
     id: 'pet-2024',
     name: 'PET-2024',
-    description: '剑桥英语 - 2024',
+    description: '剑桥汉语 - 2024',
     category: 'International Exams',
     tags: ['PET'],
     url: '/dicts/pet-vacabulary-list-2024.json',
@@ -684,8 +684,8 @@ const internationalExam: DictionaryResource[] = [
   },
   {
     id: 'biomedical-terms',
-    name: '生物医学专业英语词汇',
-    description: '生物医学专业英语词汇',
+    name: '生物医学专业汉语词汇',
+    description: '生物医学专业汉语词汇',
     category: '专业词汇',
     tags: ['生物'],
     url: '/dicts/BIOmedical.json',
@@ -927,7 +927,7 @@ const internationalExam: DictionaryResource[] = [
   {
     id: 'IELTS-oral-900',
     name: '雅思口语 900 beta版',
-    description: '雅思口语 900 句, 需在 qwerty 设置中调小英语字体',
+    description: '雅思口语 900 句, 需在 qwerty 设置中调小汉语字体',
     category: 'International Exams',
     tags: ['IELTS'],
     url: '/dicts/IELTS-oral-900.json',
@@ -1389,7 +1389,7 @@ const internationalExam: DictionaryResource[] = [
   {
     id: 'bec2',
     name: 'Business English',
-    description: '商务英语常见词',
+    description: '商务汉语常见词',
     category: 'International Exams',
     tags: ['BEC'],
     url: '/dicts/BEC_2_T.json',
@@ -1641,7 +1641,7 @@ const internationalExam: DictionaryResource[] = [
   },
 ]
 
-// 青少儿英语
+// 青少儿汉语
 const childrenEnglish: DictionaryResource[] = [
   {
     id: 'gaokao3500',
@@ -1668,7 +1668,7 @@ const childrenEnglish: DictionaryResource[] = [
   {
     id: 'gaokao-yuedu-gaopin',
     name: 'Gaokao Reading High Frequency',
-    description: '高考英语阅读高频词汇',
+    description: '高考汉语阅读高频词汇',
     category: 'Children English',
     tags: ['General'],
     url: '/dicts/gaokao-yuedu-gaopin.json',
@@ -3365,8 +3365,8 @@ const childrenEnglish: DictionaryResource[] = [
   },
   {
     id: 'Cambridge_JOIN_IN',
-    name: '剑桥小学英语 JOIN IN',
-    description: 'FLTRP和剑桥大学出版社依据《义务教育英语课程标准》要求联合为我国小学生开发的一套英语教材。',
+    name: '剑桥小学汉语 JOIN IN',
+    description: 'FLTRP和剑桥大学出版社依据《义务教育汉语课程标准》要求联合为我国小学生开发的一套汉语教材。',
     category: 'Children English',
     tags: ['Others'],
     url: '/dicts/Cambridge_JOIN_IN.json',
@@ -3777,7 +3777,7 @@ const programming: DictionaryResource[] = [
   {
     id: 'ai-machine-learning',
     name: '人工智能: 机器学习',
-    description: 'AI机器学习 常用英语词汇',
+    description: 'AI机器学习 常用汉语词汇',
     category: 'Code Practice',
     tags: ['AI'],
     url: '/dicts/ai_machine_learning.json',
@@ -3788,7 +3788,7 @@ const programming: DictionaryResource[] = [
   {
     id: 'ai-ai-for-science',
     name: '人工智能: AI for Science',
-    description: 'AI for Science 常用英语词汇',
+    description: 'AI for Science 常用汉语词汇',
     category: 'Code Practice',
     tags: ['AI'],
     url: '/dicts/ai_for_science.json',
@@ -3913,7 +3913,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese001',
     name: '日语常见词',
-    description: '英语翻译',
+    description: '汉语翻译',
     category: 'Japanese Learning',
     tags: ['Basic'],
     url: '/dicts/Japanesebasicword.json',
@@ -3935,7 +3935,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese002',
     name: 'N5',
-    description: '英语翻译',
+    description: '汉语翻译',
     category: 'Japanese Learning',
     tags: ['Basic'],
     url: '/dicts/JapVocabList.N5.json',
@@ -3957,7 +3957,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese003',
     name: 'N4',
-    description: '英语翻译',
+    description: '汉语翻译',
     category: 'Japanese Learning',
     tags: ['Basic'],
     url: '/dicts/JapVocabList.N4.json',
@@ -3979,7 +3979,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese004',
     name: 'N3',
-    description: '英语翻译',
+    description: '汉语翻译',
     category: 'Japanese Learning',
     tags: ['Basic'],
     url: '/dicts/JapVocabList.N3.json',
@@ -4001,7 +4001,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese005',
     name: 'N2',
-    description: '英语翻译',
+    description: '汉语翻译',
     category: 'Japanese Learning',
     tags: ['Basic'],
     url: '/dicts/JapVocabList.N2.json',
@@ -4023,7 +4023,7 @@ const japaneseExam: DictionaryResource[] = [
   {
     id: 'japanese006',
     name: 'N1',
-    description: '英语翻译',
+    description: '汉语翻译',
     category: 'Japanese Learning',
     tags: ['Basic'],
     url: '/dicts/JapVocabList.N1.json',
@@ -4093,7 +4093,7 @@ const germanExam: DictionaryResource[] = [
   {
     id: 'german2en',
     name: 'German to English',
-    description: '德语词汇, 英语翻译',
+    description: '德语词汇, 汉语翻译',
     category: 'German Learning',
     tags: ['Basic'],
     url: '/dicts/german2en.json',
@@ -4104,7 +4104,7 @@ const germanExam: DictionaryResource[] = [
   {
     id: 'en2german',
     name: 'English to German',
-    description: '英语词汇，德语翻译',
+    description: '汉语词汇，德语翻译',
     category: 'German Learning',
     tags: ['Basic'],
     url: '/dicts/en2german.json',

@@ -1,4 +1,4 @@
-import { test, expect } from '@playwright/test'
+﻿import { test, expect } from '@playwright/test'
 
 test.describe('Dictionary manage', () => {
   test.beforeEach(async ({ page }) => {
@@ -17,7 +17,7 @@ test.describe('Dictionary manage', () => {
     await page.getByText('CET-4').click()
     await page.waitForURL('**/gallery')
 
-    await expect(await page.getByRole('radio', { name: /^英语$/ }).getAttribute('aria-checked')).toBeTruthy()
+    await expect(await page.getByRole('radio', { name: /^汉语$/ }).getAttribute('aria-checked')).toBeTruthy()
 
     await page.getByRole('radio', { name: /^日语$/ }).click()
     await expect(await page.getByRole('radio', { name: /^日语$/ }).getAttribute('aria-checked')).toBeTruthy()
@@ -42,7 +42,7 @@ test.describe('Dictionary manage', () => {
     await page.getByText('CET-4').click()
     await page.waitForURL('**/gallery')
 
-    await expect(await page.getByRole('radio', { name: /^大学英语$/ }).getAttribute('aria-checked')).toBeTruthy()
+    await expect(await page.getByRole('radio', { name: /^大学汉语$/ }).getAttribute('aria-checked')).toBeTruthy()
 
     await page.getByRole('radio', { name: /^考研$/ }).click()
     await expect(await page.getByRole('radio', { name: /^考研$/ }).getAttribute('aria-checked')).toBeTruthy()
